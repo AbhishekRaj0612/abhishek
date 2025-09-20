@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, ActivityIndicator, TouchableOpacity, Alert, Modal, TextInput, ScrollView } from 'react-native';
 import { Users, UserCheck, UserX, Shield, CreditCard as Edit, Trash2, Plus, Search, Filter } from 'lucide-react-native';
-import { Building } from 'lucide-react-native';
 import { supabase } from '../../lib/supabase';
 
 export default function AdminUsers() {
@@ -614,11 +613,10 @@ const styles = StyleSheet.create({
     color: '#111827',
   },
   radioGroup: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     gap: 8,
   },
   radioOption: {
-    flex: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
     borderRadius: 8,
