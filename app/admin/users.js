@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, FlatList, ActivityIndicator, TouchableOpacity, Alert, Modal, TextInput, ScrollView } from 'react-native';
 import { Users, UserCheck, UserX, Shield, CreditCard as Edit, Trash2, Plus, Search, Filter } from 'lucide-react-native';
+import { Building } from 'lucide-react-native';
 import { supabase } from '../../lib/supabase';
 
 export default function AdminUsers() {

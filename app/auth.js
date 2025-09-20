@@ -32,7 +32,9 @@ export default function AuthScreen() {
 
   const userTypes = [
     { id: 'user', label: 'Citizen', icon: '👤', color: '#1E40AF', description: 'Report issues and engage with community' },
-    { id: 'admin', label: 'Administrator', icon: '👨‍💼', color: '#10B981', description: 'Manage city operations and issues' },
+    { id: 'area_super_admin', label: 'Area Super Admin', icon: '👨‍💼', color: '#10B981', description: 'Manage area-wide operations and assign to departments' },
+    { id: 'department_admin', label: 'Department Admin', icon: '🏛️', color: '#8B5CF6', description: 'Manage department issues and create tenders' },
+    { id: 'admin', label: 'System Administrator', icon: '⚙️', color: '#EF4444', description: 'Full system access and management' },
     { id: 'tender', label: 'Contractor', icon: '🏗️', color: '#F59E0B', description: 'Bid on municipal projects and tenders' },
   ];
 
@@ -117,6 +119,12 @@ export default function AuthScreen() {
         switch (userType) {
           case 'admin':
             router.replace('/admin');
+            break;
+          case 'area_super_admin':
+            router.replace('/area-super-admin');
+            break;
+          case 'department_admin':
+            router.replace('/department-admin');
             break;
           case 'tender':
             router.replace('/tender-dashboard');
