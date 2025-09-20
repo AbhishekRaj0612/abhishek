@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert, RefreshControl } from 'react-native';
 import { useRouter } from 'expo-router';
-import { 
-  Building, AlertTriangle, FileText, Users, TrendingUp, Clock, 
-  CircleCheck as CheckCircle, Activity, LogOut, Settings, BarChart3,
-  Hammer, UserCheck
-} from 'lucide-react-native';
+import { Building, TriangleAlert as AlertTriangle, FileText, Users, TrendingUp, Clock, CircleCheck as CheckCircle, Activity, LogOut, Settings, ChartBar as BarChart3, Hammer, UserCheck } from 'lucide-react-native';
 import { 
   getCurrentUser, 
   getUserProfile, 

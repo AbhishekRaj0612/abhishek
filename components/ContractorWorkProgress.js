@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, TextInput, Alert, Modal, Image } from 'react-native';
-import { 
-  Plus, Camera, Upload, Send, X, Clock, CheckCircle, 
-  AlertTriangle, FileText, DollarSign, Hammer
-} from 'lucide-react-native';
+import { Plus, Camera, Upload, Send, X, Clock, CircleCheck as CheckCircle, TriangleAlert as AlertTriangle, FileText, DollarSign, Hammer } from 'lucide-react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { createWorkProgress, getWorkProgress } from '../lib/supabase';
 import { uploadMultipleImages } from '../lib/cloudinary';
